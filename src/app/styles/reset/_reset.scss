@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-flex;
+  font-family: var(--font-geist);
+}
+
+span,
+i,
+svg,
+input,
+textarea,
+select {
+  display: inline-flex;
+  font-family: var(--font-geist);
+}
+
+button {
+  display: inline-flex;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-family: var(--font-geist);
+}
+
+p {
+  font-family: var(--font-geist);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-geist);
+}
