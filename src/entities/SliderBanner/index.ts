@@ -1,0 +1,1 @@
+export { default as SliderBanner } from "./ui/SliderBanner"
