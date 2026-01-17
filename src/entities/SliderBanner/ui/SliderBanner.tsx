@@ -25,6 +25,7 @@ function SliderBanner() {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
+        initialSlide={Math.floor(sliderItems.length / 2)}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -37,7 +38,7 @@ function SliderBanner() {
         className={styles.swiper}
       >
         {sliderItems.map((el) => (
-          <SwiperSlide className={styles.slide}>
+          <SwiperSlide className={styles.slide} key={el}>
             <img src={el} alt="image" />
           </SwiperSlide>
         ))}
