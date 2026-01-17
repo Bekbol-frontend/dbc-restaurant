@@ -1,9 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import { EffectCoverflow } from "swiper/modules";
 import styles from "./SliderBanner.module.scss";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
+import "swiper/css/autoplay";
 
 const sliderItems = [
   "https://swiperjs.com/demos/images/nature-1.jpg",
@@ -34,8 +36,13 @@ function SliderBanner() {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow]}
+        modules={[EffectCoverflow, Autoplay]}
         className={styles.swiper}
+        autoplay={{
+          delay: 1200,
+          disableOnInteraction: false,
+        }}
+        loop={true}
       >
         {sliderItems.map((el) => (
           <SwiperSlide className={styles.slide} key={el}>
