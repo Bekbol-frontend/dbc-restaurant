@@ -2,11 +2,9 @@
   max-width: 1200px;
   width: 100%;
   margin-inline: auto;
-  padding: var(--space-sm);
 
   .swiper {
     width: 100%;
-    padding-block: var(--space-md);
 
     .slide {
       height: 300px;
@@ -18,8 +16,8 @@
       overflow: hidden;
 
       @media screen and (max-width: 600px) {
-        height: 150px;
-        width: 150px;
+        height: 120px;
+        width: 120px;
         border: 2px solid var(--base-white);
       }
 
