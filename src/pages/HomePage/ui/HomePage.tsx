@@ -1,6 +1,7 @@
 import { Banner } from "@/entities/Banner";
 import BlockMenu from "./BlockMenu/BlockMenu";
 import Restourants from "./Restourants/Restourants";
+import RestourantsMap from "./RestourantsMap/RestourantsMap";
 
 function HomePage() {
   return (
@@ -8,6 +9,7 @@ function HomePage() {
       <Banner />
       <BlockMenu />
       <Restourants />
+      <RestourantsMap />
     </>
   );
 }
