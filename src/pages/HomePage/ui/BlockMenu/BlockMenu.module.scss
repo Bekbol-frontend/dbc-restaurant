@@ -4,9 +4,16 @@
   .flex {
     display: flex;
     overflow-x: auto;
+    gap: var(--space-xs);
+    cursor: grab;
+    user-select: none;
+
+    &:active {
+      cursor: grabbing;
+    }
 
     &::-webkit-scrollbar {
-      opacity: 0;
+      display: none;
     }
 
     .item {

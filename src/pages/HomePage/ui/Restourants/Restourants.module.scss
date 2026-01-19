@@ -1,0 +1,13 @@
+.section {
+  padding-block: var(--space-lg);
+
+  .label {
+    margin-bottom: var(--space-md);
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: var(--space-xs);
+  }
+}
