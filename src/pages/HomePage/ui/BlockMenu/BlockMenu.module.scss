@@ -1,0 +1,20 @@
+.section {
+  padding-block: var(--space-md);
+
+  .flex {
+    display: flex;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      opacity: 0;
+    }
+
+    .item {
+      min-width: 340px;
+
+      @media screen and (max-width: 600px) {
+        min-width: 300px;
+      }
+    }
+  }
+}

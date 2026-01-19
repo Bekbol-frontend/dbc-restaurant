@@ -1,0 +1,33 @@
+.cardMenu {
+  background-color: var(--primary-50);
+  border-radius: var(--rounded-box);
+  padding: var(--space-md);
+
+  display: inline-flex;
+  gap: var(--space-xs);
+  border: 3px solid var(--light-gray-50);
+
+  .span {
+    border: 4px solid var(--base-white);
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: var(--primary-550);
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 22px;
+      height: 22px;
+      object-fit: cover;
+    }
+  }
+
+  .label {
+    color: var(--primary-550);
+  }
+
+  .paragraph {
+    color: var(--primary-350);
+  }
+}
