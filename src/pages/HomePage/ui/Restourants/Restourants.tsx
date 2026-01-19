@@ -3,11 +3,14 @@ import styles from "./Restourants.module.scss";
 import { Label } from "@/shared/ui/Label";
 import RestourantItem from "./RestourantItem/RestourantItem";
 import { restourants } from "../../model/items";
+import { SearchInput } from "../SearchInput";
 
 function Restourants() {
   return (
     <section className={styles.section}>
       <Container>
+        <SearchInput />
+
         <Label className={styles.label}>Restoranlar</Label>
 
         <div className={styles.items}>

@@ -1,6 +1,10 @@
 .section {
   padding-block: var(--space-lg);
 
+  @media screen and (max-width: 600px) {
+    padding-block: var(--space-sm);
+  }
+
   .label {
     margin-bottom: var(--space-md);
   }

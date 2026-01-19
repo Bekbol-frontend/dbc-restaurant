@@ -1,0 +1,24 @@
+.searchInput {
+  margin-bottom: var(--space-md);
+  background-color: var(--base-white);
+  padding: var(--space-md);
+  border-radius: var(--rounded-box);
+  width: 320px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    padding: var(--space-sm);
+  }
+
+  input {
+    flex: 1;
+    border: none;
+
+    &::placeholder {
+      color: var(--gray-100);
+    }
+  }
+}
