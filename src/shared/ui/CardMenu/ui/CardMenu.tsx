@@ -3,12 +3,15 @@ import { Paragraph } from "../../Paragraph";
 import Icon from "@/shared/assets/icons/menu-icon.svg";
 import styles from "./CardMenu.module.scss";
 import { clsx } from "@/shared/lib/clsx";
+import useBreakpoint from "@/shared/lib/hooks/useBreakpoint";
 
 interface IProps {
   className?: string;
 }
 
 function CardMenu({ className = "" }: IProps) {
+  const { mobile } = useBreakpoint();
+
   return (
     <div className={clsx([styles.cardMenu, className])}>
       <span className={styles.span}>
@@ -16,7 +19,7 @@ function CardMenu({ className = "" }: IProps) {
       </span>
 
       <div>
-        <Label type="medium" className={styles.label}>
+        <Label type={mobile ? "small" : "medium"} className={styles.label}>
           Ommabop kafelar
         </Label>
         <Paragraph type="medium" className={styles.paragraph}>

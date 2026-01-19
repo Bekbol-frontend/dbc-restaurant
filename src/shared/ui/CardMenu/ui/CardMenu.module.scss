@@ -3,6 +3,10 @@
   border-radius: var(--rounded-box);
   padding: var(--space-md);
 
+  @media screen and (max-width: 600px) {
+    padding: var(--space-sm);
+  }
+
   display: inline-flex;
   gap: var(--space-xs);
   border: 3px solid var(--light-gray-50);
