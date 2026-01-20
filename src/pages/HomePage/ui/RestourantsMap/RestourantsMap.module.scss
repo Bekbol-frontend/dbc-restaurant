@@ -1,3 +1,8 @@
 .section {
   padding-block: var(--space-md);
+
+  .mapWrapper {
+    border-radius: var(--rounded-box);
+    overflow: hidden;
+  }
 }
